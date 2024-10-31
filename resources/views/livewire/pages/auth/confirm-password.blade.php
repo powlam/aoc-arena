@@ -44,7 +44,7 @@ $confirmPassword = function () {
 
             <x-text-input wire:model="password"
                           id="password"
-                          class="block mt-1 w-full"
+                          class="block w-full mt-1"
                           type="password"
                           name="password"
                           required autocomplete="current-password" />
