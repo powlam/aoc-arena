@@ -66,7 +66,7 @@ test('user can delete their account', function () {
 
     $component
         ->assertHasNoErrors()
-        ->assertRedirect('/');
+        ->assertRedirect(route('welcome'));
 
     $this->assertGuest();
     $this->assertNull($user->fresh());
