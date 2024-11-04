@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('welcome');
+Route::view('/archetypes', 'archetypes')->name('archetypes');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

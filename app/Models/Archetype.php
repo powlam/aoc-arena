@@ -29,4 +29,11 @@ class Archetype extends Model
             get: fn (mixed $value, array $attributes) => ArchetypeEnum::from($attributes['name']),
         );
     }
+
+    protected function imageName(): Attribute
+    {
+        return Attribute::make(
+            get: fn (mixed $value, array $attributes) => $attributes['name'].'_Archetype_Class_Symbol.webp',
+        );
+    }
 }
