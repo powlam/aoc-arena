@@ -9,6 +9,13 @@ export default {
         './resources/views/**/*.blade.php',
     ],
 
+    safelist: [
+        {
+            /* We want any bg color class to be generated */  
+            pattern: /^bg-\w+-\d{2,3}$/, variants: ['hover']
+        }
+    ],
+
     theme: {
         extend: {
             fontFamily: {

@@ -44,4 +44,47 @@ enum ArchetypeEnum
 
         return $value;
     }
+
+    public function bgColor(): string
+    {
+        switch ($this) {
+            case self::Bard:
+                $color = 'bg-pink-100';
+                break;
+
+            case self::Cleric:
+                $color = 'bg-yellow-100';
+                break;
+
+            case self::Fighter:
+                $color = 'bg-red-100';
+                break;
+
+            case self::Mage:
+                $color = 'bg-blue-100';
+                break;
+
+            case self::Ranger:
+                $color = 'bg-green-100';
+                break;
+
+            case self::Rogue:
+                $color = 'bg-purple-100';
+                break;
+
+            case self::Summoner:
+                $color = 'bg-orange-100';
+                break;
+
+            case self::Tank:
+                $color = 'bg-cyan-100';
+                break;
+
+            default:
+                $color = 'bg-gray-100';
+                break;
+        }
+
+        return $color;
+    }
 }
