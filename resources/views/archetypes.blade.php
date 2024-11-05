@@ -3,7 +3,7 @@
         <h1 class="text-2xl font-bold">Archetypes</h1>
     </header>
 
-    <div class="flex items-start justify-between gap-2">
+    <div class="flex flex-col items-start justify-between gap-2 sm:flex-row">
         <livewire:archetypes />
         <livewire:archetype-classes />
     </div>

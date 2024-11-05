@@ -1,4 +1,4 @@
-<div class="flex-grow">
+<div class="flex-grow w-full sm:w-auto">
     <ul>
         @foreach(App\Models\Archetype::all() as $archetype)
             <li @class([
