@@ -17,7 +17,7 @@
     </head>
     <body class="font-sans antialiased text-gray-900">
         <div class="flex flex-col items-center min-h-screen gap-6 pt-6 bg-gray-100 sm:gap-6 sm:justify-start">
-            <div class="h-20">
+            <div class="h-12 sm:h-20">
                 <a href="{{ route('welcome') }}" wire:navigate>
                     <x-application-logo class="h-full text-gray-500 fill-current" />
                 </a>
